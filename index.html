@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Border on Button Hover</title>
+    <style>
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        
+            background: radial-gradient(yellow,cyan);
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .image-container {
+            display: inline-block;
+            margin-bottom: 20px;
+            transition: border 0.3s ease;
+ 
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            display: block;
+            border: 5px solid transparent;
+            box-sizing: border-box;
+            transition: border 0.3s ease;
+            box-shadow: 1px 3px 8px 6px black;
+            margin: 10px;
+            animation-direction: alternate-reverse;
+        animation-name: image;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    
+}
+   @keyframes image{
+    form{
+        background-color: black;
+    }
+    to{
+    background-color: black;
+        box-shadow: 0px 0px 10px 2px black;
+    }
+
+        }
+
+        .hover-button {
+            padding: 10px;
+            background-color: #ff1500;
+            color: white;
+            border-radius: 8px;
+border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            position: relative;
+            padding-bottom: 10px;
+            top: -30px; /* Move the button upwards, closer to the image */
+        
+        animation-name: image;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    
+}
+   @keyframes image{
+    form{
+        background-color: red
+    }
+    to{
+    background-color: red;
+        box-shadow: 0px 0px 20px 2px red;
+    }
+}
+    a{
+        text-decoration: none;
+        color: aliceblue;
+    }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="image-container">
+        <img src="3d9103cf-e81e-47fa-b048-1d23ceaa8ea7.jpg" alt="Responsive Image">
+        <button class="hover-button"><a href ="http://127.0.0.1:5500/index.html">Hover me!</button>
+    </div>
+    <div class="image-container">
+        <img src="poolaiya.jpg" alt="Responsive Image">
+        <button class="hover-button"><a href="http://127.0.0.1:5500/metha.html">click</a></button>
+    </div>
+    <div class="image-container">
+        <img src="img_2.jpg" alt="Responsive Image">
+        <button class="hover-button">Hover me!</button>
+    </div>
+    <div class="image-container">
+        <img src=" img_3.jpg" alt="Responsive Image">
+        <button class="hover-button">Hover me!</button>
+    </div>
+    <div class="image-container">
+        <img src=" img_4.jpg" alt="Responsive Image">
+        <button class="hover-button">Hover me!</button>
+    </div>
+    <div class="image-container">
+        <img src="img+6.jpg" alt="Responsive Image">
+        <button class="hover-button">Hover me!</button>
+    </div>
+</div>
+
+</body>
+</html>
